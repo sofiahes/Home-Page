@@ -1,0 +1,26 @@
+ version: "3.3"
+
+ services:
+   api-books:
+     build: ./api-books
+     image: sofiahes/api-books
+     ports:
+       - 8000:8000
+
+   api-task:
+     build: ./api-task
+     image: sofiahes/api-task
+     ports:
+       - 8001:8001
+
+   api-peliculas:
+     build: ./api-peliculas
+     image: sofiahes/api-peliculas
+     ports:
+       - 8081:8081
+
+   websimple:
+     build: ./websimple
+     image: sofiahes/websimple
+     ports:
+       - 8080:80
